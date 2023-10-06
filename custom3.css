@@ -1,0 +1,157 @@
+:root {
+  /*COLORS*/
+  --primary-bg-color: #fffcee;
+  --secondary-bg-color: #f2f8e7;
+  --primary-text-color: #f36024;
+  --accent-color-1: #920c53;
+  --accent-color-2: #86b3f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--accent-color-1);
+  font-size: 2.6rem;
+}
+
+main {
+  background-color: var(--secondary-bg-color);
+}
+
+button {
+  display: flex;
+  gap: 20px;
+  border: none;
+  background-color: var(--primary-text-color);
+}
+
+button div:nth-child(1) {
+  background-color: var(--primary-text-color);
+  padding: 0.2rem;
+  padding-left: 1rem;
+}
+button div:nth-child(2) {
+  background-color: var(--accent-color-1);
+  padding: 0.2rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+button div:nth-child(1) p {
+  color: var(--secondary-bg-color);
+}
+
+button div:nth-child(2) p {
+  color: var(--secondary-bg-color);
+}
+
+@media (min-width: 340px) and (max-width: 600px) {
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .segment-header {
+    padding: 1rem;
+  }
+  .segment-text {
+    padding: 1rem;
+  }
+
+  .segment-cta {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 940px) {
+  .segment-cta,
+  .segment-header,
+  .segment-text {
+    position: absolute;
+  }
+
+  .segment-header {
+    top: 30%;
+    left: 30%;
+  }
+
+  .segment-text {
+    top: 55%;
+    left: 30%;
+  }
+
+  .segment-cta {
+    top: 82%;
+    left: 30%;
+  }
+
+  img {
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media (min-width: 940px) {
+  .segment-grafik {
+    width: 350px;
+    height: 750px;
+    background-color: var(--primary-text-color);
+  }
+
+  .segment-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+  }
+
+  .segment-cta,
+  .segment-header,
+  .segment-text {
+    position: absolute;
+  }
+
+  .segment-header {
+    top: 30%;
+    left: 6%;
+  }
+
+  .segment-text {
+    top: 27%;
+    left: 60%;
+    max-width: 30vw;
+  }
+
+  .segment-cta {
+    top: 62%;
+    left: 60%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .segment-text {
+    top: 27%;
+    left: 50%;
+  }
+
+  .segment-cta {
+    top: 62%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .segment-text {
+    top: 27%;
+    left: 40%;
+  }
+
+  .segment-cta {
+    top: 52%;
+    left: 40%;
+  }
+}

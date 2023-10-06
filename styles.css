@@ -1,0 +1,52 @@
+:root {
+  /*COLORS*/
+  --primary-bg-color: #fffcee;
+  --secondary-bg-color: #f2f8e7;
+  --primary-text-color: #f36024;
+  --accent-color-1: #920c53;
+  --accent-color-2: #86b3f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*    GLOBAL     */
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Martel", serif;
+  color: var(--primary-text-color);
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-text-color);
+}
+
+/*    FORSIDE     */
+
+.style-tile {
+}
+
+.style-image-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
